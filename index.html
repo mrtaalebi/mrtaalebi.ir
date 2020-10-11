@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>
+    mrtaalebi.ir
+  </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    function randint(var l, var r) {
+      if (r < l) return 0;
+      return l + Math.floor(Math.random() * (r - l));
+    }
+    function move() {
+      var el = $("#boochoo");
+      el.css("margin-left", randint(10, 90) + "%");
+      el.css("margin-top", randint(10, 90) + "%"); 
+      el.css("color", "#" + randint(0, 255) + "" + randint(0, 255) + "" + randint(0, 255);
+    }
+    $(document).ready(move());
+  </script>
+
+</head>
+<body>
+  <h1 id="boochoo" onmouseover="move()">Buamo Hualo</h1>
+</body>
+</html>
